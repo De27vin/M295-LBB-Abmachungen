@@ -1,4 +1,4 @@
-const express = required('express');
+const express = require('express');
 
 const app = express();
 
@@ -11,8 +11,8 @@ app.use("/swagger", swaggerRoute);
 
 
 
-const port = 3000;
+const port = 2727;
 app.listen(port, () => {
-    console.log("Server läuft auf localhost:3000");
+    console.log("Server läuft auf localhost:2727");
 });
 
