@@ -21,5 +21,9 @@ npm i path
 ## ESLint aufsetzen
 npm init @eslint/config@latest
 
+## Swagger Dokumentations-tool
+npm i swagger-autogen
+npm i swagger-ui-express
+
 ## Auto restart ddes Servers
 npm i nodemon (optional)
