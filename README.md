@@ -25,10 +25,11 @@ npm init @eslint/config@latest
 npm i nodemon (optional)
 
 ## Swagger Dokumentations-tool
-npm i swagger-autogen
-npm i swagger-ui-express
+npm i swagger-autogen swagger-ui-express
+
 npm run swagger-autogen
 
 ## Um den Server zu starten
 nodemon index.js
+
 (oder node index.js, falls nodemon nicht installiert)
