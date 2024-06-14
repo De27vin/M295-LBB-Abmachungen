@@ -1,6 +1,10 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 
+const swaggerUi = require('swagger-ui-express');
+const swaggerDocument = require('./docs/swagger.json');
+app.use('/docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
+
 const app = express();
 
 const tasksRoute = require("./routes/tasks");

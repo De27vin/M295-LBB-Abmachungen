@@ -9,7 +9,8 @@
     "swagger-ui-express": "^5.0.1"
   },
   "scripts": {
-    "start": "nodemon index.js"
+    "start": "nodemon index.js",
+    "swagger-autogen": "node ./docs/swagger.js"
   },
   "devDependencies": {
     "eslint": "^9.4.0",
