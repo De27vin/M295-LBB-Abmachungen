@@ -1,3 +1,9 @@
+# Abmachungen
+In diesem Projekt kann man neue abmachungen erstellen, abfangen, ändern und löschen.
+Die Abmachungen beinhalten einen Titel, eine Beschreibung, ein Fälligkeitsdatum und
+ein Datum, bei dem sie abgeschlossen wurden, solange sie offen sind ist jenes Datum "null".
+## Autor: Devin de Spindler
+
 # Alle Pakete installieren:
 
 ## Node.js Framework
