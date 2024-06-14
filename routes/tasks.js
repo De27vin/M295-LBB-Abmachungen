@@ -2,8 +2,8 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const router = express.Router();
 
-
 router.use(express.json());
+
 router.use(bodyParser.json());
 router.use(bodyParser.urlencoded({ extended: true }));
 
@@ -61,7 +61,7 @@ router.put('/:Id', (request, response) => {
     const byId = request.params.Id;
     const taskId = tasksArray.findIndex(tasks => tasks.Id == byId);
 
-    if (taskId !== -1) {
+    if(taskId !== -1) {
         tasksArray[taskId] = { ...tasksArray[taskId], ...request.body };
         response.status(200).json(tasksArray[taskId]);
         console.log(tasksArray);
@@ -77,7 +77,7 @@ router.patch('/:Id', (request, response) => {
     const byId = request.params.Id;
     const taskIndex = tasksArray.findIndex(task => task.Id == byId);
 
-    if (taskIndex !== -1) {
+    if(taskIndex !== -1) {
         if(request.body.Id) {
             tasksArray[taskIndex].Id = request.body.Id;
         }
@@ -106,7 +106,7 @@ router.delete('/:Id', (request, response) => {
     const byId = request.params.Id;
     const taskIndex = tasksArray.findIndex(task => task.Id == byId);
 
-    if (taskIndex !== -1) {
+    if(taskIndex !== -1) {
         tasksArray.splice(taskIndex, 1);
         response.status(200).json({ message: "Task erfolgreich gelöscht!" });
     } else {
