@@ -9,7 +9,7 @@ const app = express();
 
 const tasksRoute = require("./routes/tasks");
 const verificationRoute = require("./routes/verification");
-const swaggerRoute = require("./routes/swagger");
+const swaggerRoute = require("./docs/swagger");
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
